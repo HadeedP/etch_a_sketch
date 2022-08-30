@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Etch a Sketch</title>
+  <script src="javascript.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reset.css">
+
+</head>
+
+<body>
+  <div class="flex-container">
+  <div class="title"><h1>Etch a Sketch</h1></div>
+  <div class="mode">Mode: Colouring</div>
+  <div class="content">
+    <div class="board"></div>
+    <div class="buttons">
+      <button onclick="changeColour('black')">Black</button>
+      <button onclick="changeColour('white')">Erasor</button>
+      <button onclick="changeColour('grey')">Grey</button>
+      <button onclick="changeColour('rainbow')">Rainbow</button>
+      <button onclick="reset()">Reset</button>
+    </div>
+    <div>
+      <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)"/>
+      <button>Set Size</button>
+    </div>
+    <div class="error">Please enter an input between 2 - 100</div>
+  </div>
+  </div>
+
+</body>
+
+</html>
